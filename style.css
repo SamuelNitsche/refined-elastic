@@ -18,6 +18,14 @@ textarea {
   -moz-osx-font-smoothing: grayscale !important;
 }
 
+a {
+  color: #636363;
+}
+
+a:hover {
+  color: #7c7c7c;
+}
+
 /* General icons */
 .listing td.threads::before,
 .listing td.attachment::before,
@@ -39,7 +47,8 @@ a.button.icon:before,
 .header a:before,
 .popover .menu li a:before,
 .listbox a:before,
-.listing.iconized tr td:before {
+.listing.iconized tr td:before,
+.searchbar form:before {
   font-size: 14px !important;
   opacity: 0.75 !important;
 }
@@ -167,10 +176,47 @@ button.btn:before {
 
 /* Less borders */
 #mailboxlist.listing li,
-#mailboxlist.listing tbody td {
+#mailboxlist.listing tbody td,
+#layout>div>.header {
   border-bottom: none !important;
 }
 
 #mailboxlist.listing li ul {
   border-top: none !important;
+}
+
+/* Muted sidebar */
+#layout-sidebar {
+  background: #f4f5f5 !important;
+}
+
+/* Open in new window */
+#message-subject-heading a.extwin:before {
+  color: #636363 !important;
+  float: none !important;
+  display: inline-block !important;
+  font-size: 75% !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+  content: "\f360" !important;
+  font-family: 'Icons' !important;
+}
+
+#message-subject-heading span.inner {
+  display: none !important;
+}
+
+/* Message subject preview size */
+.frame-content h2 {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* Alert warning background color */
+.ui.alert.boxwarning {
+  background: oklch(0.987 0.026 102.212) !important;
+}
+
+.ui.alert.boxconfirmation i.icon, .ui.alert.boxerror i.icon, .ui.alert.boxinformation i.icon, .ui.alert.boxwarning i.icon {
+  font-size: 1.2em!important;
 }
