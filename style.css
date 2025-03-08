@@ -1,0 +1,160 @@
+/* Inter-Schriftart für die gesamte Anwendung */
+body,
+html,
+button,
+input,
+select,
+textarea,
+.ui-widget,
+.popover, body, button, input, optgroup, select, textarea {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Die bestehenden Icons verkleinern und dezenter gestalten */
+.listing td.threads::before,
+.listing td.attachment::before,
+.listing td.flagged::before,
+.listing td.status::before,
+.listing td.priority::before,
+#messagelist td.threads::before,
+#messagelist td.attachment::before,
+#messagelist td.flagged::before,
+#messagelist td.status::before,
+#messagelist td.priority::before,
+.toolbar a.button:before,
+.toolbarmenu .icon:before,
+#taskmenu a:before,
+.listing-info:before,
+a.button.icon:before,
+.popupmenu a.icon:before,
+#settings-sections .listitem a:before,
+.header a:before,
+.popover .menu li a:before,
+.listbox a:before,
+.listing.iconized tr td:before {
+  font-size: 14px !important;
+  opacity: 0.75 !important;
+}
+
+/* Icons in der Ordnerliste und Toolbar */
+.folderlist li a:before,
+.toolbar a.button:before,
+a.button.icon:before {
+  font-size: 14px !important;
+  opacity: 0.7 !important;
+  margin-right: 4px !important;
+}
+
+/* Größe der Icons in der Menüleiste */
+#topnav .special-buttons a.button:before {
+  font-size: 16px !important;
+}
+
+/* Icon-Positionen in Buttons mit Text */
+.button.icon:before {
+  left: 8px !important;
+}
+
+/* Aktives Element Fett */
+#mailboxlist .mailbox.selected {
+  font-weight: 700 !important;
+}
+
+.messagelist td.subject span {
+  font-size: 12px !important;
+}
+
+/* Betreff in Liste Fett */
+.messagelist td.subject a {
+  font-weight: 500 !important;
+}
+
+/* Betreff in Liste noch Fetter wenn ungelesen */
+.messagelist .unread td.subject a {
+  font-weight: 700 !important;
+}
+
+/* Buttons */
+.btn {
+  appearance: none !important;
+  background-color: #FAFBFC !important;
+  border: 1px solid rgba(27, 31, 35, 0.15) !important;
+  border-radius: 6px !important;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset !important;
+  box-sizing: border-box !important;
+  color: #24292E !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 20px !important;
+  list-style: none !important;
+  padding: 6px 16px !important;
+  position: relative !important;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1) !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  touch-action: manipulation !important;
+  vertical-align: middle !important;
+  white-space: nowrap !important;
+  word-wrap: break-word !important;
+}
+
+.btn:hover {
+  background-color: #F3F4F6 !important;
+  text-decoration: none !important;
+  transition-duration: 0.1s !important;
+}
+
+.btn:disabled {
+  background-color: #FAFBFC !important;
+  border-color: rgba(27, 31, 35, 0.15) !important;
+  color: #959DA5 !important;
+  cursor: default !important;
+}
+
+.btn:active {
+  background-color: #EDEFF2 !important;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset !important;
+  transition: none 0s !important;
+}
+
+.btn:focus {
+  outline: 1px transparent !important;
+}
+
+.btn:before {
+  display: none !important;
+}
+
+.btn:-webkit-details-marker {
+  display: none !important;
+}
+
+#message-header>.header img.contactphoto {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+
+.message-wrapper {
+  border: 1px solid rgba(27, 31, 35, 0.15) !important;
+  border-radius: 6px !important;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset !important;
+  padding: 12px !important;
+}
+
+/* Left aligned navbar */
+#layout>div>.footer, #layout>div>.header {
+  justify-content: start;
+}
+
+/* Less borders */
+#mailboxlist.listing li, #mailboxlist.listing tbody td {
+  border-bottom: none !important;
+}
+#mailboxlist.listing li ul {
+  border-top: none !important;
+}

@@ -1,0 +1,5 @@
+{
+    "name": "Refined Elastic",
+	"author": "Samuel Nitsche",
+    "extends": "elastic"
+}
