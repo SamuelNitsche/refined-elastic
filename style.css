@@ -79,6 +79,24 @@ button.btn:before {
   left: 8px !important;
 }
 
+/* Folders list */
+#folderlist-content {
+  padding: 8px !important;
+}
+
+#folderlist-content ul.treelist li a {
+  border-radius: 8px !important;
+  cursor: pointer !important;
+}
+
+#folderlist-content ul.treelist li.selected>a, ul.treelist li.selected>div>a {
+  background-color: #e6e6e6 !important;
+}
+
+#folderlist-content .listing li a:hover {
+  background-color: #e9ebee !important;
+}
+
 /* Font-weight */
 #mailboxlist .mailbox.selected {
   font-weight: 700 !important;
