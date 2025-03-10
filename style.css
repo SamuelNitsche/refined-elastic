@@ -117,7 +117,7 @@ button.btn:before {
 }
 
 /* Buttons */
-.btn {
+.btn:not(.ui-dialog-titlebar *) {
   appearance: none !important;
   background-color: #FAFBFC !important;
   border: 1px solid rgba(27, 31, 35, 0.15) !important;
@@ -240,26 +240,52 @@ button.btn:before {
 }
 
 /* Inputs */
-input.form-control, select.form-control {
-  border-radius: 6px !important;
-  appearance: none !important;
-  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset !important;
+.form-control {
   font-size: unset !important;
 }
 
-/* Input groups */
-.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
-  border-left: none !important;
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  padding-left: 0 !important;
+.input-group-lg>.custom-select, .input-group-lg>.form-control, .input-group-lg>.input-group-append>.btn, .input-group-lg>.input-group-append>.input-group-text, .input-group-lg>.input-group-prepend>.btn, .input-group-lg>.input-group-prepend>.input-group-text {
+  font-size: 1rem !important;
 }
 
 .input-group-text {
+  color: #a3a3a3 !important;
   background: none !important;
 }
 
-.input-group .icon:before {
-  font-size: 14px !important;
-  opacity: 0.75 !important; 
+/* Toolbar */
+#layout>div>.header {
+  height: 45px !important;
+  min-height: 45px !important;
+}
+
+.toolbar-button,
+.toolbar li a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#messagelist-header .menu.toolbar li,
+#messagelist-header .menu.toolbar a,
+#layout-content .menu.toolbar li,
+#layout-content .menu.toolbar a {
+  height: 45px !important;
+}
+
+.menu.toolbar a {
+  float: none !important;
+  max-width: none !important;
+}
+
+.menu .dropbutton {
+  display: flex !important;
+}
+
+.menu.toolbar .dropbutton a.dropdown:before {
+  line-height: unset !important;
+}
+
+.menu span.inner {
+  padding: 0px 6px !important;
 }
