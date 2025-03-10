@@ -238,3 +238,28 @@ button.btn:before {
 .ui.alert.boxconfirmation i.icon, .ui.alert.boxerror i.icon, .ui.alert.boxinformation i.icon, .ui.alert.boxwarning i.icon {
   font-size: 1.2em!important;
 }
+
+/* Inputs */
+input.form-control, select.form-control {
+  border-radius: 6px !important;
+  appearance: none !important;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset !important;
+  font-size: unset !important;
+}
+
+/* Input groups */
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+  border-left: none !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  padding-left: 0 !important;
+}
+
+.input-group-text {
+  background: none !important;
+}
+
+.input-group .icon:before {
+  font-size: 14px !important;
+  opacity: 0.75 !important; 
+}
